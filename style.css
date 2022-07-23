@@ -475,6 +475,12 @@ section .contacts__box .container:after {
 	top: calc(20px + 130px);
 }
 
+.contacts .btn--inner:disabled {
+	text-decoration: line-through;
+	color: #c9b3ae;
+	background-color: transparent;
+}
+
 .about__title,
 .about__text {
 	max-width: 700px;
@@ -656,6 +662,7 @@ section .contacts__box .container:after {
 
 .contacts__item--area {
 	width: 100%;
+	margin-bottom: 25px;
 }
 
 .contacts__box {
@@ -723,6 +730,10 @@ section .contacts__box .container:after {
 	letter-spacing: 0.04em;
 	padding-bottom: 20px;
 	font-weight: 700;
+}
+
+.contacts .btn--inner {
+	margin-top: 45px;
 }
 
 .single__bg {
@@ -800,13 +811,9 @@ section .contacts__box .container:after {
 	margin-bottom: 12px;
 }
 
-.footer {
-	background-color: #000;
-	padding-bottom: 150px;
-}
-
 .footer__wrap {
 	width: calc(100% - 300px);
+	padding-bottom: 150px;
 }
 
 .footer__logo {
@@ -1036,12 +1043,9 @@ footer .container:after {
 	width: 100%;
 }
 
-.footer {
-	padding-bottom: 110px;
-}
-
 .footer__wrap {
 	width: 100%;
+	padding-bottom: 110px;
 }
 
 }
@@ -1156,7 +1160,7 @@ footer .container:after {
 	margin-bottom: 36px;
 }
 
-.footer {
+.footer__wrap {
 	padding-bottom: 60px;
 }
 

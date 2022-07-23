@@ -136,7 +136,7 @@
      valClick('#c_fio', 1, regName, '.contacts__error--fio');
      valClick('#c_email', 1, regEmail, '.contacts__error--email');
      valClick('#c_tel', 1, regPhone, '.contacts__error--tel', true);
-     var btn_bool = disBtnClick('#c_fio, #c_tel, #c_email', '#w_btn');
+     var btn_bool = disBtnClick('#c_fio, #c_tel, #c_email', '#c_btn');
 
      if (btn_bool) {
        $.ajax({
