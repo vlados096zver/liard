@@ -1,0 +1,35 @@
+@import 'responsive'
+
+.footer
+	background-color: #000
+	padding-bottom: 150px
+	+media(mdx)
+		padding-bottom: 110px
+	+media(sm)
+		padding-bottom: 60px
+		
+	&__logo
+		max-width: 176px
+		width: 100%
+		padding-top: 64px
+		margin: 0 auto
+		margin-bottom: 50px
+		img
+			display: block
+
+	&__text
+		margin-bottom: 50px
+		p
+			font-size: 14px
+			line-height: 2.14
+			color: #fff
+			text-align: center
+			text-transform: uppercase
+
+	&__elem
+		font-size: 18px
+		line-height: 1.2
+		color: #fff
+		text-align: center
+		text-transform: uppercase
+		font-weight: 100

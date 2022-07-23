@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "roboto";
+    src: url("roboto-regular.eot");
+    src: url("roboto-regular.eot?#iefix") format("embedded-opentype"),
+    url("roboto-regular.woff2") format("woff2"),
+    url("roboto-regular.woff") format("woff"),
+    url("roboto-regular.ttf") format("truetype"),
+    url('roboto-regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("roboto-100.eot");
+    src: url("roboto-100.eot?#iefix") format("embedded-opentype"),
+    url("roboto-100.woff") format("woff"),
+    url("roboto-100.woff2") format("woff2"),
+    url("roboto-100.ttf") format("truetype"),
+    url('roboto-100.svg') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("roboto-200.eot");
+    src: url("roboto-200.eot?#iefix") format("embedded-opentype"),
+    url("roboto-200.woff") format("woff"),
+    url("roboto-200.woff2") format("woff2"),
+    url("roboto-200.ttf") format("truetype"),
+    url('roboto-200.svg') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "roboto";
+    src: url("roboto-700.eot");
+    src: url("roboto-700.eot?#iefix") format("embedded-opentype"),
+    url("roboto-700.woff") format("woff"),
+    url("roboto-700.woff2") format("woff2"),
+    url("roboto-700.ttf") format("truetype"),
+    url('roboto-700.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("roboto-900.eot");
+    src: url("roboto-900.eot?#iefix") format("embedded-opentype"),
+    url("roboto-900.woff") format("woff"),
+    url("roboto-900.woff2") format("woff2"),
+    url("roboto-900.ttf") format("truetype"),
+    url('roboto-900.svg') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("InterExtraLight.eot");
+    src: url("InterExtraLight.eot?#iefix") format("embedded-opentype"),
+    url("InterExtraLight.woff2") format("woff2"),
+    url("InterExtraLight.woff") format("woff"),
+    url("InterExtraLight.ttf") format("truetype"),
+    url('InterExtraLight.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

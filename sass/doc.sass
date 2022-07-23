@@ -1,0 +1,58 @@
+@import 'responsive'
+
+.doc
+	&+.contacts
+		.title
+			padding-top: 160px	
+			+media(mdx)
+				padding-top: 100px
+			+media(sm)
+				padding-top: 60px
+
+	&__holder
+		width: calc(100% - 300px)
+		+media(mdx)
+			width: 100%	
+
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		padding-bottom: 50px
+		margin: 0 -20px
+		+media(mdx)
+			padding-top: 0px
+			padding-bottom: 20px
+			margin: 0px
+
+	&__item
+		width: calc(100% / 2 - 40px)
+		background: linear-gradient(280.47deg, #ae1935 -5.01%, #423447 103.1%)
+		padding: 36px 25px
+		padding-bottom: 46px	
+		margin: 0 20px
+		margin-bottom: 44px
+		+media(mdx)
+			width: 100%
+			max-width: 550px
+			margin: 0 auto
+			margin-bottom: 45px
+
+		&:hover
+			.btn
+				background-color: #000
+				border-color: #000
+				color: #fff
+
+	&__subtitle
+		font-size: 18px	
+		line-height: 1.67	
+		color: #fff
+		text-transform: uppercase
+		margin-bottom: 28px
+
+	&__text
+		margin-bottom: 32px
+		p
+			font-size: 16px
+			line-height: 1.5
+			color: #fff

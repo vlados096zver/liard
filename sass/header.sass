@@ -1,0 +1,127 @@
+@import 'responsive'
+
+.main-header	
+	&+.doc
+		.subtitle
+			padding-bottom: 170px	
+			+media(mdx)
+				padding-bottom: 100px	
+			+media(sm)
+				padding-bottom: 60px	
+		
+	&__block
+		position: relative
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		+media(md)
+			justify-content: space-between
+
+	&__wrap
+		margin-right: auto
+		+media(md)
+			margin-right: 30px
+
+	&__list
+		display: flex
+		align-items: center
+		+media(md)
+			display: none
+			width: calc(100% + 40px)
+			top: 100%
+			left: -20px
+			right: 0px
+			z-index: 3
+			position: absolute
+			max-height: calc(100vh - 70px)
+			overflow-y: auto
+			overflow-x: hidden
+			padding: 0
+			padding-bottom: 10px
+			background-color: #1c1823
+		li
+			&:not(:last-child)
+				margin-right: 40px
+				+media(mdx)
+					margin-right: 28px
+
+	&__link
+		display: block
+		font-size: 18px
+		line-height: 1.2
+		color: #cab3ad
+		text-transform: uppercase
+		font-weight: 700
+		transition: 0.3s color
+		+media(lgxs)
+			font-size: 17px
+		+media(mdx)
+			font-size: 16px
+		+media(md)
+			padding: 8px 20px
+
+		&:hover:not(.main-header__link--active)
+			color: #C21330
+
+	&__description
+		font-size: 18px
+		color: #000
+		font-weight: bold
+		text-transform: uppercase
+		padding-right: 15px
+
+
+.mobile-wrap
+	display: none
+	align-items: center
+	justify-content: space-between
+	cursor: pointer
+	+media(md)
+		display: flex
+		width: 100%
+		padding: 7px 0px
+		padding-bottom: 8px
+
+.line-burger
+	display: block
+	position: absolute
+	top: 50%
+	left: 0
+	width: 25px
+	height: 3px
+	background-color: #fff
+	transition: 0.5s width
+	&:after,
+	&:before
+		content: ''
+		position: absolute
+		width: 25px
+		height: 3px
+		background-color: #fff
+		left: 0
+		transition: 0.5s
+	&:after
+		top: calc(100% + 5px)
+	&:before
+		bottom: calc(100% + 5px)
+
+.line-active
+	width: 0
+	&:after
+		top: 9px
+		transform: rotate(-45deg)
+		transform-origin: 0 0
+	&:before
+		bottom: 9px
+		transform: rotate(45deg)
+		transform-origin: 0 100%
+
+.main-nav__toggle
+	position: relative
+	cursor: pointer
+	display: none
+	width: 25px
+	height: 25px
+	margin-top: -5px
+	+media(md)
+		display: block

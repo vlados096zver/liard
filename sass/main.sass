@@ -1,0 +1,251 @@
+@import 'responsive'
+
+body
+	margin: 0
+	padding: 0
+	width: 100%
+	min-width: 320px
+	min-height: 100vh
+	overflow-x: hidden
+	color: #333333
+	background-color: #1c1823
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+	text-size-adjust: none
+	-webkit-text-size-adjust: none
+	-ms-text-size-adjust: none
+	font-size: 16px
+	line-height: 1.2
+	font-weight: normal
+	font-style: normal
+	font-family: "Roboto"
+	counter-reset: section
+
+*
+	box-sizing: border-box
+
+img
+	max-width: 100%
+	height: auto
+
+.svg-about
+	display: none	
+
+.container
+	max-width: 1240px
+	margin: 0 auto
+	padding: 0 20px
+	&--inner
+		max-width: 1920px
+		margin: 0 auto
+
+.title
+	font-size: 48px	
+	line-height: 1.2
+	color: #fff
+	text-transform: uppercase
+	padding-bottom: 80px
+	font-weight: 700
+	+media(mdx)
+		font-size: 38px
+		padding-bottom: 60px
+	+media(sm)
+		font-size: 30px
+		padding-bottom: 36px
+
+.subtitle
+	font-size: 128px
+	color: #C9B3AE
+	text-transform: uppercase	
+	font-weight: 100	
+	+media(lgxs)
+		font-size: 100px
+	+media(mdx)
+		font-size: 70px	
+	+media(sm)
+		font-size: 40px	
+
+.input
+	display: block
+	width: 100%
+	font-size: 18px
+	color: #fff
+	background: #C9B3AE
+	border: 2px solid #C9B3AE
+	border-radius: 5px
+	outline: none
+	text-transform: uppercase
+	padding: 17px 20px
+	&::placeholder
+		color: #fff
+
+	&:focus::placeholder
+		color: transparent
+	&--area
+		min-height: 200px
+		resize: none
+
+	&.form-fail
+		border-color: #ff0000
+
+.btn
+	display: block
+	max-width: 185px
+	width: 100%	
+	cursor: pointer
+	font-size: 16px
+	color: #c9b3ae
+	background-color: transparent
+	border: none
+	outline: none
+	border-radius: 25px
+	border: 2px solid #C9B3AE
+	padding: 13px 12px
+	padding-bottom: 14px	
+	text-align: center
+	font-weight: 700
+	transition: 0.2s background, 0.2s color, 0.2s border
+	font-family: "Roboto"
+	font-weight: 700
+
+	&--header
+		max-width: 250px
+		position: relative
+		width: 100%
+		font-size: 18px	
+		color: #000
+		background-color: #fff
+		border-color: #fff
+		padding: 22px 12px
+		border-radius: 0px
+		+media(lgxs)
+			max-width: 205px
+		+media(sm)
+			max-width: 170px
+			padding: 13px 12px
+
+	&--details
+		max-width: 228px
+		font-size: 14px	
+		padding: 14px 12px
+		padding-bottom: 15px	
+
+	&--inner
+		&:hover
+			background-color: #fff
+			color: #000
+
+	&--load
+		color: #C21330
+		background-color: #fff
+
+.about .btn--inner,
+.desc .btn--inner,
+.doc .btn--inner,
+.contacts .btn--inner
+	margin: 0 auto
+		
+.breadcrumbs
+	&__list
+		display: flex	
+		flex-wrap: wrap
+		align-items: center
+		padding-top: 80px
+		padding-bottom: 52px
+		+media(sm)
+			padding-bottom: 36px	
+		li
+			display: block
+			cursor: default
+			margin-bottom: 15px
+			&:not(:last-child)
+				margin-right: 40px
+				transition: 0.3s color
+				position: relative
+				&:after
+					position: relative
+					right: -20px
+					line-height: 1
+					content: '/'
+					color: #C9B3AE
+
+
+		li, a
+			font-size: 16px
+			line-height: 1.2
+			color: #C9B3AE
+			text-transform: uppercase
+			text-align: center
+			transition: 0.25s color
+
+		a
+			&:hover
+				color: #C21330
+
+
+section .container
+	position: relative
+	&:after
+		position: absolute
+		content: ' '
+		top: 0px
+		right: 20px
+		width: 250px
+		height: 100%
+		background-color: #C21330
+		+media(lgxs)
+			width: 205px
+		+media(mdx)
+			display: none
+
+section .contacts__box .container
+	&:after
+		display: none
+
+.counter
+	position: relative
+	&:after
+		position: absolute
+		top: 0px
+		left: 30px
+		counter-increment: section
+		content: "0" counter(section)
+		font-size: 36px
+		color: #C9B3AE
+		font-weight: 200
+		font-family: Inter
+		+media(lb)
+			left: 16px
+		+media(lgm)
+			display: none
+
+	&:before
+		position: absolute
+		content: ' '
+		top: 20px
+		left: 80px
+		width: 50px
+		height: 1px
+		background-color: #C9B3AE
+		font-size: 36px
+		color: #C9B3AE
+		+media(lb)
+			left: 70px
+			width: 30px
+		+media(lg)
+			display: none
+
+.about
+	.counter
+		&:after
+			top: -100px
+
+		&:before
+			top: calc(20px - 100px)
+
+.single
+	.counter
+		&:after
+			top: 130px
+
+		&:before
+			top: calc(20px + 130px)

@@ -1,0 +1,33 @@
+@import 'responsive'
+
+.about
+	&__title,
+	&__text
+		max-width: 700px
+
+	&__title
+		font-size: 128px
+		line-height: 1.2	
+		color: #c9b3ae
+		text-transform: uppercase
+		padding-top: 110px
+		padding-bottom: 100px
+		font-weight: 100		
+		+media(mdx)
+			font-size: 100px
+			padding-top: 70px	
+			padding-bottom: 60px	
+		+media(sm)
+			font-size: 60px
+			padding-bottom: 50px	
+
+	&__text
+		margin-bottom: 90px
+		+media(mdx)
+			margin-bottom: 75px
+		+media(sm)
+			margin-bottom: 60px
+		p
+			font-size: 18px
+			line-height: 1.67
+			color: #c9b3ae
